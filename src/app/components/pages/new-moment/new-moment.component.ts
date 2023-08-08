@@ -20,7 +20,7 @@ export class NewMomentComponent {
     formData.append("title", moment.title)
     formData.append("description", moment.description)
     
-    if(moment.image) formData.append("images", moment.image)
+    if(moment.image) formData.append("image", moment.image)
 
     //enviar para o service
     await this.momentService.createMoment(formData).subscribe()
